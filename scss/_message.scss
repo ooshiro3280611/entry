@@ -1,0 +1,18 @@
+.message-wrap {
+    margin-top: 17.6rem;
+    margin-bottom: 18.3rem;
+    text-align: center;
+    min-width: 200px;
+}
+
+.message-str {
+    font-size: 1.8rem;
+    margin-bottom: 72px;
+}
+
+.message-btn {
+    width: 23%;
+    @include tab {
+        width: auto;
+    }
+}

@@ -1,0 +1,502 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=reset.css.map */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 12px;
+}
+
+.wrap {
+  width: 90%;
+  margin: 0 auto;
+  padding: 90px 0;
+}
+@media screen and (max-width: 600px) {
+  .wrap {
+    padding: 50px 0;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 600px) {
+  .title {
+    margin-bottom: 40px;
+  }
+}
+.title span {
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+.title:before {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 1px;
+  background-color: black;
+  margin-right: 1.75rem;
+  color: inherit;
+}
+.title:after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 1px;
+  background-color: black;
+  margin-left: 1.75rem;
+  color: inherit;
+}
+
+.btn {
+  background: linear-gradient(to right, #06BEB6, #283C86);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px;
+  outline: none;
+}
+.btn:active {
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+.btn p {
+  color: #fff;
+  padding: 16px 66px;
+}
+.btn p i span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-icon:before {
+  margin-right: 4px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  padding: 2rem;
+  color: white;
+  z-index: 20;
+}
+
+.header-bgc {
+  background-image: url("../img/bg1.jpg");
+}
+
+.company-name {
+  font-size: 1.8rem;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 959px) {
+  .header-nav {
+    display: none;
+  }
+}
+.header-nav ul {
+  display: flex;
+}
+.header-nav ul li {
+  margin-left: 5.5rem;
+  font-size: 1.5rem;
+}
+.header-nav ul li:first-child {
+  margin-left: 0;
+}
+
+#ham {
+  height: 14px;
+  width: 25px;
+  display: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 959px) {
+  #ham {
+    display: block;
+  }
+  #ham span {
+    display: block;
+    position: relative;
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 7px;
+    transition: all 1s;
+  }
+  #ham span:last-child {
+    margin-bottom: 0;
+  }
+}
+
+#first-v {
+  height: 100vh;
+  background-image: url("../img/bg1.jpg");
+  background-position: 50% 0%;
+  position: relative;
+}
+
+.fv-wrap {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 600px) {
+  .fv-wrap {
+    height: 50%;
+    top: 60%;
+  }
+}
+
+.fv-hide {
+  display: none;
+}
+
+.fv-title {
+  font-size: 2.7rem;
+  color: white;
+}
+.fv-title:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 46%;
+  background-color: #fff;
+  margin: 2rem auto 0;
+}
+
+#header-active {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  font-size: 1.5rem;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#active-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 17rem;
+}
+#active-list ul li {
+  margin-bottom: 30px;
+  text-align: center;
+}
+#active-list ul li:last-child {
+  margin-bottom: 0;
+}
+
+.active-btn {
+  margin-top: 144px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to right, #06BEB6, #283C86);
+  border-radius: 25px;
+  outline: none;
+  box-shadow: 0 5px;
+  border: none;
+}
+.active-btn:active {
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+.active-btn p {
+  color: #ffffff;
+  padding: 16px 66px;
+}
+
+.open {
+  display: block;
+}
+
+#about {
+  background-color: #F8F8F8;
+}
+
+.item-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 28%;
+  text-align: center;
+  padding: 40px 3.5vw 30px;
+  background-color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .item {
+    width: 47%;
+    padding: 28px 13px 12px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .item:nth-child(3) {
+    margin-top: 20px;
+  }
+}
+.item:nth-child(4), .item:nth-child(5), .item:nth-child(6) {
+  margin-top: 46px;
+}
+@media screen and (max-width: 600px) {
+  .item:nth-child(4), .item:nth-child(5), .item:nth-child(6) {
+    margin-top: 20px;
+  }
+}
+.item-title {
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+}
+@media screen and (max-width: 600px) {
+  .item-title {
+    font-size: 15px;
+  }
+}
+.item .item-img {
+  max-width: 170px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+  .item .item-img {
+    width: 50%;
+    min-width: 81px;
+  }
+}
+.item .item-img img {
+  width: 100%;
+}
+
+.item-desc {
+  margin-top: 35px;
+  text-align: left;
+}
+
+#news {
+  background-image: url("../img/bg2.jpg");
+}
+
+.news-title {
+  color: white;
+}
+.news-title::before {
+  background-color: #fff;
+}
+.news-title:after {
+  background-color: #fff;
+}
+
+.news-items {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .news-items {
+    flex-direction: column;
+  }
+}
+
+.news-item {
+  width: 30.5%;
+  background-color: #fff;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.16);
+  font-weight: 400;
+}
+@media screen and (max-width: 600px) {
+  .news-item {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .news-item:first-child {
+    margin-top: 0;
+  }
+}
+.news-item__img {
+  overflow: hidden;
+}
+.news-item__img img {
+  width: 100%;
+}
+.news-item__bottom {
+  padding: 20px;
+}
+
+.news-days {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.news-item__title {
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+
+.message-wrap {
+  margin-top: 17.6rem;
+  margin-bottom: 18.3rem;
+  text-align: center;
+  min-width: 200px;
+}
+
+.message-str {
+  font-size: 1.8rem;
+  margin-bottom: 72px;
+}
+
+.message-btn {
+  width: 23%;
+}
+@media screen and (max-width: 959px) {
+  .message-btn {
+    width: auto;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: black;
+}
+
+small {
+  color: white;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */
